@@ -1,6 +1,17 @@
+.container-css {
+   padding: 1.5rem;
+   line-height: 1.5;
+
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1rem; 
+
+   margin-bottom: 2rem;
+}
+
 .table {
-    padding: 0.9rem 1rem;
+    padding: 1rem 1.5rem;
     line-height: 1.5;
     font-size: 1rem;
+
     white-space: normal;
 }

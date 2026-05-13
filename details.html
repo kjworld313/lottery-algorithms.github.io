@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Algorithm Details</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="src/styles.css">
     </head>
     <body>
         <!-- Header / Navigation Bar -->
@@ -41,105 +42,89 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="game.html">Game Example</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="bibliography.html">Resources</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
         <!-- Main content -->
-        <main id="main-content" class="container">
-            <section id="more-information" aria-labelledby="more-information-heading">
-            <h2 id="more-information-heading" class="mb-3">Lottery Algorithm Details</h2>
+        <main id="main-content" class="container container-css lh-base text-start">
+            <section id="details" aria-labelledby="details-heading">
+            <h2 id="details-heading" class="mb-3">Lottery Algorithm Details</h2>
 
             <div class="row">
-            <article class="col-md-8">
-                <div class="card">
-                    <div class="card-body">
-                        <p>Although digital games containing lottery algorithms primarily target adults with the financial means to engage with the algorithms, many also permit children to play. In this section, I will discuss casino slots, gacha, and loot boxes in depth.</p>
-                        <div class="accordion" id="detailsAccordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Casino Slots
-                                </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#detailsAccordion">
-                                <div class="accordion-body">
-                                    Players can play digital casino slots on the Apple App Store, Google Play, Caesars Slots, and casino websites, and in-person at casinos in cities like Las Vegas and Macau. While developers may advertise free game play for virtual casino slots, virtual currency is often available for purchase. There are several types of algorithms used for casino slots: <br></p>
-                                    <ul>
-                                        <li> Non-progressive jackpots: the jackpot is a fixed value that does not increase during play, but wins are more frequent</li>
-                                        <li> Progressive jackpots: the jackpot increases as players invest money, and wins are less frequent</li>
-                                    </ul>
-                                    Typically, designers use Random Number Generators (RNG) to generate combinations to compare against winning conditions. On their website, Caesars Slots claims their virtual slots have “better payout percentages than casino machines,” and their RNG produces “combinations that are truly random and unpredictable, ensuring fair gameplay,” leading players to believe online gambling may be less predatory than in-person gambling.<br><br>
-                                    However, a few potentially predatory mechanics are built into the design of these lottery algorithms. They often produce artificial combinations simulating a close win at certain thresholds and fake wins, where a player wins less than they invested. Developers typically design the slot algorithms to finance larger wins. In Brazil, an influencer recently underwent an investigation for promoting Fortune Tiger, a virtual slot game. These algorithms do not permit children to play.
+            <div class="card">
+                <div class="card-body">
+                    <!-- Deep dive information about algorithms -->
+                    <p>Although digital games containing lottery algorithms primarily target adults with the financial means to engage with the algorithms, many also permit children to play. In this section, I will discuss casino slots, gacha, and loot boxes in depth.</p>
+                    <div class="accordion" id="detailsAccordion">
 
-                                </div>
-                                </div>
+                        <!-- Casino Slots -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Casino Slots
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#detailsAccordion">
+                            <div class="accordion-body">
+                                Players can play digital casino slots on the Apple App Store, Google Play, Caesars Slots, and casino websites, and in-person at casinos in cities like Las Vegas and Macau. While developers may advertise free game play for virtual casino slots, virtual currency is often available for purchase. There are several types of algorithms used for casino slots: <br></p>
+                                <ul>
+                                    <li> Non-progressive jackpots: the jackpot is a fixed value that does not increase during play, but wins are more frequent</li>
+                                    <li> Progressive jackpots: the jackpot increases as players invest money, and wins are less frequent</li>
+                                </ul>
+                                Typically, designers use Random Number Generators (RNG) to generate combinations to compare against winning conditions. On their website, Caesars Slots claims their virtual slots have “better payout percentages than casino machines,” and their RNG produces “combinations that are truly random and unpredictable, ensuring fair gameplay,” leading players to believe online gambling may be less predatory than in-person gambling.<br><br>
+                                However, a few potentially predatory mechanics are built into the design of these lottery algorithms. They often produce artificial combinations simulating a close win at certain thresholds and fake wins, where a player wins less than they invested. Developers typically design the slot algorithms to finance larger wins. In Brazil, an influencer recently underwent an investigation for promoting Fortune Tiger, a virtual slot game. These algorithms do not permit children to play.
+
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Gacha
-                                </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#detailsAccordion">
-                                <div class="accordion-body">
-                                    Gacha games are digital and players typically “pull” for rewards. Attractive reward design are key features of gacha games, as they increase the appeal of engaging with and spending money on gacha. The rewards dispensed may assist in gameplay progress or supplement a player’s collection. Additionally, similar to casino slots, gacha games usually offer free-to-play and pay-to-play methods of redeeming more “pulls” and there are several types:
-                                    <ul>
-                                        <li> Limited-time banner: a time-dependent type of banner that resets to new offerings after a set period. They may vary in length and companies may occasionally re-run certain banners to increase demand.</li>
-                                        <li> Static banners: a non time-dependent banner that usually offers a standard set of characters or items.</li>
-                                        <li>Static probability: an algorithm with fixed probabilities.</li>
-                                        <li>Dynamic probability: an algorithm with altering probabilities dependent on each pull.</li>
-                                    </ul>
-                                    Developers also incorporate additional mechanics:
-                                    <ul>
-                                        <li>Pity systems: after a fixed number of pulls or accumulation of virtual currency, the algorithm increases probabilities, so the player has a guaranteed win at a given threshold. They maintain player engagement, reduce frustration, and encourage continued play. Whale players intentionally spend large amounts to repeatedly reach the pity threshold, increasing developers’ profit from gacha algorithms. Studies show that a balanced pity threshold is ideal for company profit and player engagement.</li>
-                                        <li>Reset mechanisms: these reset players’ pull status after a win or after a banner ends. For win-tracking pity systems, many carry the pull history over to the next banner.</li>
-                                    </ul>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Loot Boxes
-                                </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#detailsAccordion">
-                                <div class="accordion-body">
-                                    Anson Chui Yan Tang et al., in “Prediction of problem gambling by demographics, gaming behavior and psychological correlates among gacha gamers”, found that “gacha gamers with higher risk of problem gambling tend to have greater stress, higher anxiety level, spend more on gacha purchase, have more motives for gacha purchases and engage in more gambling activities” (Tang et al. 3). Furthermore, the United States Federal Trade Commission (FTC) recently mandated game developer HoYoverse to publish probabilities and minimum costs on gacha banners. Currently, the expected number of pulls to acquire the highest-rarity character type in Genshin Impact is valued in the hundreds (USD).
-                                    <br><br>The settlement also noted HoYoverse illegally promoted loot boxes to children. Loot boxes are packaged rewards that players “open” for a random reward. Summoners War offers “magic boxes” with random reward probabilities, sometimes yielding more pulls in their gacha system or runes that enhance the monsters’ abilities. While not shown to directly produce psychological effects, researchers note that “studies on loot box spending found that both positive and negative moods, as well as psychological distress, were positively associated with loot box spending” (3). Loot boxes are essentially gacha in a different form, with reward mechanisms similar to those of slot machines. An article written by Irene Montiel et al., published on the National Library of Medicine website, titled “Loot box engagement: A scoping review of primary studies on prevalence and association with problematic gaming and gambling,” lists regulations involving loot boxes in various countries. The authors mention that “Belgium and the Netherlands consider loot boxes to be an illegal form of gambling” and “China and South Korea, require game developers to disclose the odds of winning the prize,” while “Japan only prohibits some types of loot boxes” (Montiel 3). Games with gacha and loot boxes often have low age requirements.
-                                    <br><br>While every game varies, games like Summoners War offer one-time prices for a guaranteed rare character of your choosing and limit in-app purchases. Others, like Azur Lane, provide players with free pulls through log-in bonuses and gameplay. While players choose how to engage with lottery algorithms, developers and companies design them to remain both profitable and entertaining. Just as with physical gambling, digital gambling prompts questions of ethical algorithm design.
-                                </div>
-                                </div>
                             </div>
                         </div>
-                        <h3>Bibliography</h3>
-                        <div class="mla-bibliography">
-                            <p>"ALL ABOUT SLOTS." <i>Caesars Slots</i>, 23 Aug. 2024, <a href="www.caesarsgames.com/blog/slots-machines/">Article URL</a>. Accessed 25 Apr. 2026</p>
-                            <p>Chen, Canhui, and Zhixuan Fang. “Gacha Game Analysis and Design.” <i>Proceedings of the ACM on Measurement and Analysis of Computing Systems</i>, vol. 7, no. 1, Mar. 2023, pp. 1–45, <a href="https://doi.org/10.1145/3579438">Article URL</a>. Accessed 24 Apr. 2025.</p>
-                            <p>Hanna, Graeme. "Brazilian Influencer Raquel Brito Probed Over Illegal Gambling Promotions". Newstex, San Jose, 2025. <i>ProQuest</i>, <a href="https://www.proquest.com/blogs-podcasts-websites/brazilian-influencer-raquel-brito-probed-over/docview/3244125903/se-2">Article URL</a>. Accessed 23 Apr. 2025.</p>
-                            <p>Loynds, Joel. FTC Forces Genshin Impact to Reveal Real Costs Behind Gacha Giant. <i>Newstex</i>, San Jose, 2025. <i>ProQuest</i>, <a href="https://www.proquest.com/blogs-podcasts-websites/ftc-forces-genshin-impact-reveal-real-costs/docview/3202334632/se-2">Article URL</a>. Accessed 23 Apr. 2025.</p>
-                            <p>Montiel, Irene et al. “Loot box engagement: A scoping review of primary studies on prevalence and association with problematic gaming and gambling.” <i>PLOS One</i>, vol. 17. 27 January 2022, <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0263177">Article URL</a>. Accessed 24 April 2025.
-                            <p>Tang, Anson C. Y., et al. "Prediction of Problem Gambling by Demographics, Gaming Behavior and Psychological Correlates among Gacha Gamers: A Cross-Sectional Online Survey in Chinese Young Adults." <i>Frontiers in Psychiatry</i>, vol. 13, 2022, pp. 3. <i>ProQuest</i>, <a href="https://www.proquest.com/scholarly-journals/prediction-problem-gambling-demographics-gaming/docview/3134876093/se-2">Article URL</a>. Accessed 23 Apr. 2025.</p>
+
+                        <!-- Gacha -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Gacha
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#detailsAccordion">
+                            <div class="accordion-body">
+                                Gacha games are digital and players typically “pull” for rewards. Attractive reward design are key features of gacha games, as they increase the appeal of engaging with and spending money on gacha. The rewards dispensed may assist in gameplay progress or supplement a player’s collection. Additionally, similar to casino slots, gacha games usually offer free-to-play and pay-to-play methods of redeeming more “pulls” and there are several types:
+                                <ul>
+                                    <li> Limited-time banner: a time-dependent type of banner that resets to new offerings after a set period. They may vary in length and companies may occasionally re-run certain banners to increase demand.</li>
+                                    <li> Static banners: a non time-dependent banner that usually offers a standard set of characters or items.</li>
+                                    <li>Static probability: an algorithm with fixed probabilities.</li>
+                                    <li>Dynamic probability: an algorithm with altering probabilities dependent on each pull.</li>
+                                </ul>
+                                Developers also incorporate additional mechanics:
+                                <ul>
+                                    <li>Pity systems: after a fixed number of pulls or accumulation of virtual currency, the algorithm increases probabilities, so the player has a guaranteed win at a given threshold. They maintain player engagement, reduce frustration, and encourage continued play. Whale players intentionally spend large amounts to repeatedly reach the pity threshold, increasing developers’ profit from gacha algorithms. Studies show that a balanced pity threshold is ideal for company profit and player engagement.</li>
+                                    <li>Reset mechanisms: these reset players’ pull status after a win or after a banner ends. For win-tracking pity systems, many carry the pull history over to the next banner.</li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Loot Boxes -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Loot Boxes
+                            </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#detailsAccordion">
+                            <div class="accordion-body">
+                                Anson Chui Yan Tang et al., in “Prediction of problem gambling by demographics, gaming behavior and psychological correlates among gacha gamers”, found that “gacha gamers with higher risk of problem gambling tend to have greater stress, higher anxiety level, spend more on gacha purchase, have more motives for gacha purchases and engage in more gambling activities” (Tang et al. 3). Furthermore, the United States Federal Trade Commission (FTC) recently mandated game developer HoYoverse to publish probabilities and minimum costs on gacha banners. Currently, the expected number of pulls to acquire the highest-rarity character type in Genshin Impact is valued in the hundreds (USD).
+                                <br><br>The settlement also noted HoYoverse illegally promoted loot boxes to children. Loot boxes are packaged rewards that players “open” for a random reward. Summoners War offers “magic boxes” with random reward probabilities, sometimes yielding more pulls in their gacha system or runes that enhance the monsters’ abilities. While not shown to directly produce psychological effects, researchers note that “studies on loot box spending found that both positive and negative moods, as well as psychological distress, were positively associated with loot box spending” (3). Loot boxes are essentially gacha in a different form, with reward mechanisms similar to those of slot machines. An article written by Irene Montiel et al., published on the National Library of Medicine website, titled “Loot box engagement: A scoping review of primary studies on prevalence and association with problematic gaming and gambling,” lists regulations involving loot boxes in various countries. The authors mention that “Belgium and the Netherlands consider loot boxes to be an illegal form of gambling” and “China and South Korea, require game developers to disclose the odds of winning the prize,” while “Japan only prohibits some types of loot boxes” (Montiel 3). Games with gacha and loot boxes often have low age requirements.
+                                <br><br>While every game varies, games like Summoners War offer one-time prices for a guaranteed rare character of your choosing and limit in-app purchases. Others, like Azur Lane, provide players with free pulls through log-in bonuses and gameplay. While players choose how to engage with lottery algorithms, developers and companies design them to remain both profitable and entertaining. Just as with physical gambling, digital gambling prompts questions of ethical algorithm design.
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </article>
-
-                <article class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                    <h3 class="card-title h5">Image</h3>
-                    <p class="card-text">image placeholder.</p>
-                    <img src="" alt="" width="200" height="400"></img>
-                    </div>
-                </div>
-            </article>
-
-            </div>
-            </section>
-
+        </div>
             
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
