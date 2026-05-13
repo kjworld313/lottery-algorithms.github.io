@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-
+    // pity trackers 
     let click_count = 0;
     let pity_threshold = 20;
     let pity_upperbound = 30;
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         return items[length-1].item_name;
     }
-    // button listener
+    // gacha button listener
     const play_button = document.getElementById("play");
     const modal = new bootstrap.Modal(document.getElementById("exampleModal"));
 
