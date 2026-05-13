@@ -47,7 +47,100 @@
             </nav>
         </header>
 
-        <h1>Hello, world!</h1>
+         <!-- Main content -->
+        <main id="main-content" class="container">
+            <section id="stakeholders" aria-labelledby="stakeholders-heading">
+            <h2 id="stakeholders" class="mb-3">Stakeholders</h2>
+
+
+            <div class="row">
+                <div class="card">
+                    <div class="card-body"> 
+                        <!-- First section of stakeholders -->
+                        <h4>Creators: </h4>
+                        <p>Creators are game developers and entertainment organizations who produce digital games with lottery algorithms.</p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#creator-info" aria-expanded="false" aria-controls="creator-info">
+                            Show interests and risks
+                        </button>
+                        <!-- Creators - Hidden text for expansion -->
+                        <div class="collapse" id="creator-info">
+                            <div class="card card-body">
+                                <!--- Listing of the two types -->
+                                <h5>Entertainment Organizations</h5>
+                                <ul>
+                                    <li>They finance, deploy, and promote their digital games containing lottery algorithms and face the greatest legal risk because regulations can differ internationally and change over time. They benefit from the profits due to gacha games and online gambling popularity.</li>
+                                    <li>They want the algorithms to have low win rates so that players will want to continue spending money but high enough to avoid player frustration.</li>
+                                </ul>
+                                <h5>Game Developers</h5>
+                                <ul>
+                                    <li>They are employees of entertainment organizations or independent developers who implement the lottery algorithms (slots, gacha, loot boxes) for digital games.</li>
+                                    <li>They also face legal and ethical risks, which may mean extreme financial loss depending on if a developer is independent or part of a large organization.</li>
+                                    <li>They want to avoid designing overly complicated, unethical algorithms that would be difficult to update if regulations change.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Second section of stakeholders -->
+                        <h4>Players: </h4>
+                        <p>
+                            Players are users of lottery algorithms in digital games. I will detail three types: the average player, players susceptible to gambling addiction, and players who currently possess problematic gambling behaviors.
+                            Both susceptible and possessive players place more emphasis on the lottery or gacha/lootbox element of digital games and are most likely to make large purchases. Lottery algorithms may substantially affect their financial status
+                            and relationships may benefit from more regulations/information about the risks of gambling addictions in playing digital games with lottery mechanics.
+                        </p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#player-info" aria-expanded="false" aria-controls="player-info">
+                            Show interests and risks
+                        </button>
+                        <!-- Players - Hidden text for expansion -->
+                        <div class="collapse" id="player-info">
+                            <div class="card card-body">
+                                <!--- Listing of the two types -->
+                                <h5>Average player</h5>
+                                <ul>
+                                    <li>They spend negligible amounts on lottery algorithms over the long run.</li>
+                                    <li>Lottery algorithms may frustrate them but do not severely impact their financial and mental state.</li>
+                                    <li>Fixating on collecting a specific character or item is not as important for them as other aspects of gameplay.</li>
+
+                                </ul>
+                                <h5>Spending players</h5>
+                                <ul>
+                                    <li>Susceptible players: a vulnerable group who could potentially develop a gambling addiction.</li>
+                                    <li>Possessive players: a group of players who currently have detrimental gambling behaviors.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Third section of stakeholders -->
+                        <h4>Streamers and Influencers: </h4>
+                        <p>
+                            Streamers and influencers wield significant influence over players who enjoy watching others acquire random characters or items and may be influenced by opinions on certain items.
+                            They profit from content engaging with lottery algorithms in digital games and fuel players’ fixation on certain characters/items, which might pose an ethical and legal risk for
+                            promoting lottery algorithms. Due to their role, they may experience the same risks as creators and players and any controversies involving organizations or algorithms they promote
+                            may detriment their reputation.
+                        </p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#streamer-info" aria-expanded="false" aria-controls="streamer-info">
+                            Show interests and risks
+                        </button>
+                        <!-- Streamers and Influencers - Hidden text for expansion -->
+                        <div class="collapse" id="streamer-info">
+                            <div class="card card-body">
+                                <!--- Listing of the two types -->
+                                <h5>Streamers:</h4>
+                                <ul>
+                                    <li>They produce gaming content for other players.</li>
+                                </ul>
+                                <h5>Influencers</h4>
+                                <ul>
+                                    <li>They are contracted by companies to promote digital games.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            
+        </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </body>
 </html>
