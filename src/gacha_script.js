@@ -20,17 +20,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // function to generate probability
     function generate_probability() {
-        let probability = Math.random();
+        let probability = Math.random(); // generate random number
 
+        // check if the threshold has been met
         if (click_count == pity_upperbound) {
-            click_count = 0;
-            
+            click_count = 0;    // reset click count
+
+            // determine which rare item is won
             if (probability < 0.5) {
                 return items[0].item_name;
             } else {
                 return items[1].item_name;
             }
-        } else if (click_count >= pity_threshold) {
+        } else if (click_count >= pity_threshold) { // increase probabilities
             for (let i = 0; i <= 3; i++) {
                 items[i].probability += 0.005;
             }
@@ -41,11 +43,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // function to retrieve prize
     function reward_prize(items) {
+        // generate the probability and set current to 0
         let probability = generate_probability();
         let cur_probability = 0;
 
+        // iterate through available rewards and sum probabilities
         for (const item of items) {
             cur_probability += item.probability
+
+            // reward the item won
             if (probability < cur_probability) {
                 return item.item_name;
             }
@@ -58,7 +64,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const modal = new bootstrap.Modal(document.getElementById("exampleModal"));
 
     play_button.addEventListener("click", function () {
-        ++click_count;
+        ++click_count;  // increase the click count
+
+        // reward and update text
         const reward = reward_prize(items);
         const text = document.getElementById("prize");
 
