@@ -46,10 +46,26 @@
     margin-bottom: 1.5rem;
 }
 
+.custom-accordion-css {
+    background-color: #C6DCDC;
+    color: #031c36;
+    border-color: #455A64;
+}
+
+.custom-accordion-css:hover {
+    color: #031c36;
+    background-color: #EBF4F4;
+}
+
+.custom-accordion-css[aria-expanded='true'] {
+    background-color: #EBF4F4;
+    color: #031c36;
+}
+
 .button-css {
     min-width: 1.5rem;
     min-height: 1.5rem;
-    
+
     background-color: #546D7A;
     border-color: #455A64;
     
